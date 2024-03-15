@@ -6,13 +6,14 @@ package Figuras;
 
 
 public class Trapecio {
-    int basemenor; // Atributo que define la base de un rectángulo
-    int basemayor; // Atributo que define la altura de un rectángulo
-    int altura; // Atributo que define la altura de un rectángulo
+    int basemenor; // Atributo que define la basemenor de un trapecio
+    int basemayor; // Atributo que define la basemayor de un trapecio
+    int altura; // Atributo que define la altura de un trapecio
     /**
-     * Constructor de la clase Rectangulo
-     * @param base Parámetro que define la base de un rectángulo
-     * @param altura Parámetro que define la altura de un rectángulo
+     * Constructor de la clase r
+     * @param base Parámetro que define la basemenor de un trapecio
+     * @param base Parámetro que define la basemayor de un trapecio
+     * @param altura Parámetro que define la altura de un trapecio
      */
     Trapecio(int basemenor, int basemayor, int altura) {
         this.basemenor = basemenor;
@@ -20,17 +21,17 @@ public class Trapecio {
         this.altura = altura;
     }
     /**
-     * Método que calcula y devuelve el área de un rectángulo como la
-     * multiplicación de la base por la altura
-     * @return Área de un rectángulo
+     * Método que calcula y devuelve el área de un trapecio como el
+     * promedio de las dos bases por la altura
+     * @return Área de un trapecio
      */
     double calcularArea() {
         return ((basemenor+basemayor)/2)*altura;
     }
     /**
-     * Método que calcula y devuelve el perímetro de un rectángulo
-     * como (2 * base) + (2 * altura)
-     * @return Perímetro de un rectángulo
+     * Método que calcula y devuelve el perímetro de un trapecio
+     * basemenor + basemayor + las dos hipotenusas
+     * @return Perímetro de un trapecio
      */
     double calcularPerimetro() {
         return basemenor+basemayor+(2*calcularHipotenusa());
