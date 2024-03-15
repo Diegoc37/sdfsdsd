@@ -9,29 +9,28 @@ package Figuras;
 */
 
 public class Rombo {
-    int diagonalmenor; // Atributo que define la base de un rectángulo
-    int diagonalmayor; // Atributo que define la altura de un rectángulo
+    int diagonalmenor; // Atributo que define la diagonalmenor un rombo
+    int diagonalmayor; // Atributo que define la diagonalmayor de un rombo
     /**
-     * Constructor de la clase Rectangulo
-     * @param base Parámetro que define la base de un rectángulo
-     * @param altura Parámetro que define la altura de un rectángulo
+     * Constructor de la clase rombo
+     * @param base Parámetro que define la diagonalmenor un rombo
+     * @param altura Parámetro que define la diagonalmayor de un rombo
      */
     Rombo(int diagonalmenor, int diagonalmayor) {
         this.diagonalmenor = diagonalmenor;
         this.diagonalmayor = diagonalmayor;
     }
     /**
-     * Método que calcula y devuelve el área de un rectángulo como la
-     * multiplicación de la base por la altura
-     * @return Área de un rectángulo
+     * Método que calcula y devuelve el área de un rombo como la
+     * multiplicación de la diagonalmenor de un rombo por la diagonalmayor de un rombo
+     * @return Área de un rombo
      */
     double calcularArea() {
         return (diagonalmenor * diagonalmayor)/2;
     }
     /**
-     * Método que calcula y devuelve el perímetro de un rectángulo
-     * como (2 * base) + (2 * altura)
-     * @return Perímetro de un rectángulo
+     * Método que calcula y devuelve el perímetro de un rombo
+     * @return Perímetro de un rombo
      */
     
     double calcularPerimetro() {
